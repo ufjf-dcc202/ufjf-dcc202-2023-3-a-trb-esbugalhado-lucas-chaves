@@ -21,3 +21,11 @@ td {
 #cpu-table {
     background-color: #AD3434;
 }
+
+tr {
+    border-bottom: 1px solid #303030;
+}
+
+td:last-child {
+    border-right: 0;
+}

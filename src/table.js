@@ -7,7 +7,7 @@ function createBoard(tableID) {
         var row = table.insertRow(i);
         for(var j = 0; j < 3; j++) {
             var cell = row.insertCell(j);
-            cell.addEvetListener("click", testCell);
+            cell.addEventListener("click", testCell);
         }
     }
 }
@@ -17,5 +17,7 @@ function testCell() {
     this.textContent = this.textContent === "" ? "A" : "B";
 }
 
-createBoard("player-table");
-createBoard("cpu-table");
+document.addEventListener("DOMContentLoaded", function() {
+    createBoard("player-table");
+    createBoard("cpu-table")
+});
