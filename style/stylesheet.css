@@ -41,3 +41,11 @@ td:last-child {
     border-radius: 10px; /* Adiciona quinas arredondadas */
     cursor: pointer;
 }
+
+#player-dice {
+    background-color: #5395AA;
+}
+
+#cpu-dice {
+    background-color: #AD3434;
+}
