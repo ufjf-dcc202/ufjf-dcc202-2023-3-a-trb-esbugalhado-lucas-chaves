@@ -1,16 +1,61 @@
+@font-face {
+    font-family: Rio-Grande;
+    src: url('../fonts/RioGrande.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100hv;
+}
+
+.cpu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.player {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.player-table-container, .cpu-table-container {
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.player-dice-container, .cpu-dice-container {
+    text-align: center;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 table {
     border-collapse: collapse;
-    margin: 20px;
-    width: 150px;
-    height: 150px;
+    margin-bottom: 10px;
 }
 
 td {
-    width: 50px;
-    height: 50px;
-    border: 1px solid #303030;
+    width: 175px;
+    height: 175px;
+    border: 2px solid #303030;
     text-align: center;
-    font-size: 24px;
+    font-size: 6em;
     cursor: pointer;
 }
 
@@ -26,19 +71,15 @@ tr {
     border-bottom: 1px solid #303030;
 }
 
-td:last-child {
-    border-right: 0;
-}
-
 .dice {
-    margin-top: 10px;
-    font-size: 18px;
-    width: 50px;
-    height: 50px;
+    margin-top: 3em;
+    font-size: 6em;
+    width: 150px;
+    height: 150px;
     text-align: center;
-    line-height: 50px;
+    line-height: 1.5em;
     border: 2px solid #303030;
-    border-radius: 10px; /* Adiciona quinas arredondadas */
+    border-radius: 20px;
     cursor: pointer;
 }
 
@@ -48,4 +89,19 @@ td:last-child {
 
 #cpu-dice {
     background-color: #AD3434;
+}
+
+.title-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 4.5em;
+    font-family: Rio-Grande;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: Rio-Grande;
 }
