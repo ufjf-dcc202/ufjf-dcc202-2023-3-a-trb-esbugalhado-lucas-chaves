@@ -7,7 +7,7 @@ function createBoard(tableID) {
         var row = table.insertRow(i);
         for(var j = 0; j < 3; j++) {
             var cell = row.insertCell(j);
-            cell.addEventListener("click", testCell);
+            cell.addEventListener("click", updateTableCell);
         }
     }
 }
@@ -15,6 +15,13 @@ function createBoard(tableID) {
 // funcao placeholder enquanto nao tem a logica do jogo
 function testCell() {
     this.textContent = this.textContent === "" ? "A" : "B";
+}
+
+function updateTableCell() {
+    const playerDiceNum = document.getElementById("player-dice").textContent;
+    if(!this.textContent) {
+        this.textContent = playerDiceNum;
+    }
 }
 
 document.addEventListener("DOMContentLoaded", function() {
