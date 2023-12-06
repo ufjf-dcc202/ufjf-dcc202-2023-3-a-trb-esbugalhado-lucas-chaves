@@ -17,7 +17,7 @@
         <div class="game">
             <div class="cpu">
                 <div class="cpu-table-container">
-                    <h2 id="cpu-title">(CPU)</h2>
+                    <h2 id="cpu-title">(Bandido)</h2>
                     <table id="cpu-table"></table>
                 </div>
                 <div class="cpu-dice-container">
@@ -26,13 +26,19 @@
             </div>
             <div class="player">
                 <div class="player-table-container">
-                    <h2 id="player-title">(PLAYER)</h2>
+                    <h2 id="player-title">(Xerife)</h2>
                     <table id="player-table"></table>
                 </div>
                 <div class="player-dice-container">
                     <div id="player-dice" class="dice" onclick="updateDiceDisplay('player-dice')"></div>
                 </div>
             </div>
+        </div>
+        <div class="info-container">
+            <h2 class="info-title">(Como Jogar?)</h2>
+            <p>
+                A cada rodada um dado será lançado. O xerife deve escolher em que coluna de seu tabuleiro colocar o número do dado. Caso o bandido tenha o mesmo número na mesma coluna que o xerife colocou, todas as instâncias deste serão deletadas. O jogo acaba quando pelo menos um dos tabuleiros estiver completo com dados. Vence quem tiver a maior soma de números dos dados.   
+            </p>
         </div>
     </main>
 </body>
