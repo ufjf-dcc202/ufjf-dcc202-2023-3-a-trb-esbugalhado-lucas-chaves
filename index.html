@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/stylesheet.css">
-    <script type="module" src="src/table.js"></script>
+    <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+    <script type="module" src="src/main.js"></script>
+    <script type="module" src="src/board.js"></script>
     <script type="module" src="src/dice.js"></script>
+    <script type="module" src="src/player.js"></script>
     <title>Esbugalhado - Lucas Chaves</title>
 </head>
 <body>
@@ -21,7 +24,7 @@
                     <table id="cpu-table"></table>
                 </div>
                 <div class="cpu-dice-container">
-                    <div id="cpu-dice" class="dice" onclick="updateDiceDisplay('cpu-dice')"></div>
+                    <div id="cpu-dice" class="dice"></div>
                 </div>
             </div>
             <div class="player">
@@ -30,14 +33,14 @@
                     <table id="player-table"></table>
                 </div>
                 <div class="player-dice-container">
-                    <div id="player-dice" class="dice" onclick="updateDiceDisplay('player-dice')"></div>
+                    <div id="player-dice" class="dice"></div>
                 </div>
             </div>
         </div>
         <div class="info-container">
             <h2 class="info-title">(Como Jogar?)</h2>
             <p>
-                A cada rodada um dado será lançado. O xerife deve escolher em que coluna de seu tabuleiro colocar o número do dado. Caso o bandido tenha o mesmo número na mesma coluna que o xerife colocou, todas as instâncias deste serão deletadas. O jogo acaba quando pelo menos um dos tabuleiros estiver completo com dados. Vence quem tiver a maior soma de números dos dados.   
+                A cada rodada um dado será lançado. O <b>xerife (jogador)</b> deve escolher em que coluna de seu tabuleiro colocar o número do dado. Caso o <i>bandido (computador)</i> tenha o mesmo número na mesma coluna que o <b>xerife</b> colocou, todas as instâncias deste serão deletadas. O jogo acaba quando pelo menos um dos tabuleiros estiver completo com dados. Vence quem tiver a maior soma de números dos dados.   
             </p>
         </div>
     </main>
