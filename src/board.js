@@ -2,7 +2,17 @@ export default class Board {
     constructor(tableElement) {
         this.tableElement = tableElement;
         this.boardData = [[0,0,0],[0,0,0],[0,0,0]];
+        this.isBoardFull = false;
     }
+
+    renderBoard() {
+        //TODO
+    }
+
+    checkBoardFull() {
+        //TODO
+        this.isBoardFull = true;
+    }   
 
     //TODO: check the available cols' cells
     checkCol(index) {

@@ -17,3 +17,5 @@ let player = new Player(playerBoard, playerDice, true);
 let cpuBoard = new Board(cpuBoardEl);
 let cpuDice = new Dice(cpuDiceEl);
 let cpu = new Player(cpuBoard, cpuDice, false);
+
+var isPlayerRound = Math.round(Math.random()) == 1 ? true : false;
