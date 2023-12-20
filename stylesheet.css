@@ -1,10 +1,10 @@
 @font-face {
     font-family: Rio-Grande;
-    src: url('./RioGrande.ttf') format('truetype');
+    src: url('RioGrande.ttf') format('truetype');
 }
 @font-face {
     font-family: Eastwood;
-    src: url('./Eastwood.ttf') format('truetype');
+    src: url('Eastwood.ttf') format('truetype');
 }
 
 body {
